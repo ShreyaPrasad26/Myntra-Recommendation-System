@@ -1,9 +1,11 @@
-# Data Scraping
+#Myntra Recommendation System
 
-# Data Preprocessing
+## Data Scraping
 
-# Trend Generation
+## Data Preprocessing
 
-# Content Based Recommendations
+## Trend Generation
 
-# Image Based Recommendations
+## Content Based Recommendations
+
+## Image Based Recommendations
