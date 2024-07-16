@@ -55,16 +55,19 @@ This streamlit application provides product recommendations based on user intera
 - Search functionality to filter products
 - Custom CSS within the Streamlit app
 
-1. Session State:
+### 1. Session State:
    - Manages user interactions and tracks visited products
-2. Data Preprocessing:
+     
+### 2. Data Preprocessing:
    - Combines one-hot encoded categorical features with numeric features
    - Creates cosine similarity matrix
-3. Recommendation Functions:
+     
+### 3. Recommendation Functions:
    - recommend_cosine: Recommends similar products based on a product ID
    - get_aggregated_recommendations: Aggregates recommendations from all visited products
    - display_recommentions: Shows recommended products as clickable links
-6. Streamlit App:
+     
+### 4. Streamlit App:
    - User Interface for searching products, selecting a product ID, and getting recommendations
    - Displays inventory and recommendations in a scrollable table
    - To run the streamlit app:
