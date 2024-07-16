@@ -25,8 +25,17 @@ The product details extracted are: Brand, Price, Original Price, Description, Ra
 4. Download and install ChromeDriver
 5. Run the script
    ```
-   python myntra_scraper.py
+   python myntra_scrape_final.py
    ```
+### Myntra Product URL Scraper
+
+This python script scrapes product details from Myntra product pages using URLs obtained from an Instagram dataset.
+It scrapes the following details: Product ID, Name, Price, Brand, Rating Count, Average Rating
+
+To run the script:
+```
+python scraping_urls.py
+```
 
 ## Data Preprocessing
 
@@ -38,7 +47,7 @@ The product details extracted are: Brand, Price, Original Price, Description, Ra
 
 This streamlit application provides product recommendations for Myntra items based on image similarity using a deep learning model (EfficientNetB0)
 
-## Requirements
+### Requirements
 
 - Python 3.x
 - Streamlit
@@ -48,7 +57,7 @@ This streamlit application provides product recommendations for Myntra items bas
 - Tensorflow/Keras
 - scikit-learn
 
-## Usage
+### Usage
 
 1. Clone this repository
 2. Install the required packages
@@ -59,7 +68,7 @@ This streamlit application provides product recommendations for Myntra items bas
    ```
    streamlit run image_recommendation.py
 
-## How It Works
+### How It Works
 
 1. The app uses an EfficientNetB0 model pre-trained on ImageNet to extract features from product images
 2. Cosine similarity is computed between the feature vectors of all products
