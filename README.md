@@ -1,5 +1,7 @@
 # Myntra Recommendation System
 
+Trend generation and product recommendation system in python
+
 ## Data Scraping
 
 ### Myntra Web Scraper
@@ -42,6 +44,33 @@ python scraping_urls.py
 ## Trend Generation
 
 ## Content Based Recommendations
+
+This streamlit application provides product recommendations based on user interactions and cosine similarity between product features
+
+### Features
+- Tracks visited products within a user section
+- Provides recommendation based on selected product ID
+- Aggregates recommendations from multiple visited products
+- Displays recommended products as clickable links
+- Search functionality to filter products
+- Custom CSS within the Streamlit app
+
+1. Session State:
+   - Manages user interactions and tracks visited products
+2. Data Preprocessing:
+   - Combines one-hot encoded categorical features with numeric features
+   - Creates cosine similarity matrix
+3. Recommendation Functions:
+   - recommend_cosine: Recommends similar products based on a product ID
+   - get_aggregated_recommendations: Aggregates recommendations from all visited products
+   - display_recommentions: Shows recommended products as clickable links
+6. Streamlit App:
+   - User Interface for searching products, selecting a product ID, and getting recommendations
+   - Displays inventory and recommendations in a scrollable table
+   - To run the streamlit app:
+     ```
+     streamlit run content_based_recommendation.py
+     ```
 
 ## Image Based Recommendations
 
