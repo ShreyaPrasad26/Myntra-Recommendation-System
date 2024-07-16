@@ -43,6 +43,22 @@ python scraping_urls.py
 
 ## Trend Generation
 
+This streamlit application provides interactive visualizations of product trends from Myntra
+
+### Features
+- Brand Popularity: Visulaizes the top 10 most poppular brands based on rating count
+- Top Brands by Rating Count: Displays a bar chart of the top 10 brands by total rating count
+- Price vs Average Rating: Scatter plot showing the relationship between product price and average rating
+- Brand vs Average Rating: Scatter plot comparing average ratings across top brands
+
+### Installations
+```
+pip install streamlit pandas matplotlib seaborn
+```
+To run the streamlit app:
+```
+streamlit run trends-myntra.py
+```
 ## Content Based Recommendations
 
 This streamlit application provides product recommendations based on user interactions and cosine similarity between product features
@@ -99,7 +115,8 @@ This streamlit application provides product recommendations for Myntra items bas
 4. Run the streamlit app:
    ```
    streamlit run image_recommendation.py
-
+   ```
+   
 ### How It Works
 
 1. The app uses an EfficientNetB0 model pre-trained on ImageNet to extract features from product images
